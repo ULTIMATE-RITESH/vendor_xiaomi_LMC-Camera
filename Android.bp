@@ -1,0 +1,14 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "LMC-Camera",
+	owner: "Google",
+	apk: "proprietary/product/app/LMC-Camera/LMC8.3_Release_1_LMC.apk",
+	overrides: ["Aperture", "Camera2"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
